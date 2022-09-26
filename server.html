@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaptopVSserver</title>
 	<link rel="stylesheet" href="serverestilos.css">
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color:beige; margin: 50px;">
 	<div class="menu">
 		<nav><ul>
 				<li><a href="menu.html">Inicio</li></a>
@@ -18,6 +19,35 @@
 		</nav>	
 		</div>
 
+	<h4 class="texto">SERVER</h4>
+	<p class="texto">
+-Los procesadores de los Servidores son multiprocesadores
+<br>
+-Utilizan un socket especial
+<br>
+-Estan a todo momento en funcionamiento, son capaces de estar mucho tiempo sin tener que apagarse.
+<br>
+-Estos procesadores no se utilizan para reproducir gráficos, vienen sin gráficos integrados.
+</p>
+
+		
+		
+		<h4>LAPTOP</h4>
+		-Los procesadores de portatiles tienen un espacio reducido, esto hace limitar el tamaño de los componentes.
+		<br>
+		-Consumen menos energía, el TDP es la mitad que del sobremesa.
+		<br>
+		-Utilizan el socket bga, la cpu va soldado a la Placa.
+		<br>
+		-Tienen menos nucleos, sin hyperthreading / SMT para doblar el num de hilos
+		<br>
+		-Tienen menos velocidad de proceamiento GHz (por eso consumen menos energia)
+		<br>
+		-Casi todos llevan graficos integrados
+		<br>
+		-La misma Gpu dedicada tiene menos rendimiento en portatiles que en sobremesas. Se puede usar una EGPU (gpu externa) conectada via USB / thunderbolt, pero pierde rendimiento, transferencia de datos... Hoy en día los gráficos integradas son mejores porque van conectados vía PCIe.
+		
+	<br>
 
 		<table id="tabla1">
 			<tr class="lineasVH">
@@ -98,24 +128,6 @@
 	
 			
 		</table>
-		<p>
-			SERVER
-			-multiple cpu
-			-socket especial
-			-siempre en funcionamiento
-			-no se utiliza para reproducir gráficos, sin gráficos integrados
-			
-			PORTATIL
-			-espacio reducido, limita el tamaño de los componentes
-			-consume menos energía, el TDP es la mitad que del sobremesa
-			-socket bga, la cpu va soldado a la Placa
-			-menos nucleos, sin hyperthreading / SMT para doblar el num de hilos
-			-menos velocidad de proceamiento GHz (por eso consumen menos energia)
-			-casi todos tienen grafico integrados
-			-gpu dedicada menos rendimiento (rtx 2060 dará más rendimiento en un sobremesa que en un portatil)
-						se puede usar una EGPU (gpu externa) conectada via USB / thunderbolt, pero pierde rendimiento, transferencia de datos...
-						los gráficos integradas serán mejores porque iran conectados vía PCIe
-			-
-		</p>
+		
 </body>
 </html>

@@ -1,12 +1,12 @@
 
  
 /**fondo menu*/ 
- div{
-   margin: auto;
-   height: 400px;
-   width: 600px;
-   text-align: center;
- }
+div{
+  margin: auto;
+  height: 170px;
+  width: 600px;
+  text-align: center;
+}
 
 nav{
   height: 120px;
